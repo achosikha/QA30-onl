@@ -78,6 +78,7 @@ public class MyMain {
         String string = "My first name is Archil and my last name is Sikharulidze" + ". And my age is 36.";
 
         // String myAge = 36; -> компилятор подумает, что вы пытаетесь обычное число вставить в строчку
+        // String value = new String(); -> new -> Stack 0x45TFR -> Heap "Value"
         String myAge = 36 + " is my age"; // Компилятор поймет, что надо все превратить в строчку
         System.out.println("This is a String variable: " + string);
     }
