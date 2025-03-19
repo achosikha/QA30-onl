@@ -1,16 +1,32 @@
 package lesson_7_oop_tictactoe.atm;
 
 public class ATM {
-    public String atmCompany;
-    public String atmUser;
-    public String atmCardHolderName;
-    public long atmCardHolderNumber;
-    public long atmCardHolderDebitAccount;
+    // ACCESS MODIFIERS - модификаторы доступа
+    // public - доступно абсолютно всем и везде
+    // private - доступно только членам класса, т.е. приватная переменная доступна только внутри этого класса
+    // protected - пакет + наследование
+    // package-private - если вы не укажите модификатор доступа, то он будет автоматически указан таким, все в рамках пакета
+
+    protected String atmCompany;
+    String atmUser; // default: package-private
+    private String atmCardHolderName;
+    private long atmCardHolderNumber;
+    private long atmCardHolderDebitAccount;
 
     // Если вы создали класс без КОНСТРУКТОРА
     // Программа во время компиляции создаст ДЕФОЛТНЫЙ КОНСТРУКТОР БЕЗ ПАРАМЕТРОВ
     // Constructor, public + class name
+
+    // Method overload, перегрузка метода
+    // Это когда у нас несколько методов с одинаковыми именами, но с разными типами
+    // передаваемых данных, или же количество передаваемых данных отличается
     public ATM(){}
+
+    public ATM(String name, String user, String holderName){
+        atmCompany = name;
+        atmUser = user;
+        atmCardHolderName = holderName;
+    }
 
     // Если вы сами создали любой конструктор, тот компилятор ничего не будет больше добавлять
     // Вы обязаны делать все самостоятельно
