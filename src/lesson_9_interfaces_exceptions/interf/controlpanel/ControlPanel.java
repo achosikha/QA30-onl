@@ -1,4 +1,4 @@
-package lesson_9_interfaces_exceptions.interf;
+package lesson_9_interfaces_exceptions.interf.controlpanel;
 
 public abstract class ControlPanel implements InternetFunctional, TVFunctional{
     // Internet functions

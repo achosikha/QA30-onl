@@ -1,4 +1,4 @@
-package lesson_9_interfaces_exceptions.interf;
+package lesson_9_interfaces_exceptions.interf.controlpanel;
 
 public class SamsungControlPanel extends ControlPanel{
     private final int pinCode;
@@ -24,6 +24,11 @@ public class SamsungControlPanel extends ControlPanel{
     @Override
     public boolean validateInternetPinCode(int pinCode) {
         return this.pinCode == pinCode;
+    }
+
+    @Override
+    public void callControlPanel() {
+        System.out.println("This method is COMMON for both Interfaces.");
     }
 
     @Override

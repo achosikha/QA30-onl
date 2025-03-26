@@ -1,4 +1,4 @@
-package lesson_9_interfaces_exceptions.interf;
+package lesson_9_interfaces_exceptions.interf.controlpanel;
 
 public interface TVFunctional {
     // POST JAVA 8
@@ -26,4 +26,5 @@ public interface TVFunctional {
     void decreaseSoundTV();
     void turnOffTV();
     String getInformationTV();
+    void callControlPanel();
 }
